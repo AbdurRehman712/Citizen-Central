@@ -205,6 +205,9 @@
   .relative {
     position: relative;
   }
+  .static {
+    position: static;
+  }
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
@@ -259,6 +262,9 @@
   .mb-36 {
     margin-bottom: calc(var(--spacing) * 36);
   }
+  .contents {
+    display: contents;
+  }
   .flex {
     display: flex;
   }
@@ -310,6 +316,9 @@
   .h-\[409\.6px\] {
     height: 409.6px;
   }
+  .h-\[437\.83px\] {
+    height: 437.83px;
+  }
   .h-\[584\.71px\] {
     height: 584.71px;
   }
@@ -345,6 +354,9 @@
   }
   .w-\[297\.48px\] {
     width: 297.48px;
+  }
+  .w-\[318\.53px\] {
+    width: 318.53px;
   }
   .w-\[412px\] {
     width: 412px;
