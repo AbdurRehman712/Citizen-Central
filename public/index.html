@@ -12,28 +12,233 @@
     <!-- Googel Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
 
-    <title>Quick Start Tailwind VS Code by ARM 2023</title>
+    <title>Citizen Central</title>
 </head>
 
 <body>
-    <div class="p-5">
-
-    
-        <h1 class="font-medium text-violet-700">Welcome to Quick Start Tailwind VS Code by ARM 2025</h1>
-        <h2 class="mb-3">How to use this quick start</h2>
-        <ul class="mb-3 list-decimal list-inside">
-            <li>Open the whole folder in VS Code</li>
-            <li>Install node  if you have not install before (https://nodejs.org/en/)</li>
-            <li>Run these Command in Terminal</li>
-        </ul>
-        <div class="flex flex-col items-start justify-start gap-1 mb-3">
-            <code class="p-2 bg-gray-100 rounded-sm">npm install</code>
-            <code class="p-2 bg-gray-100 rounded-sm">npm run start</code>
+    <!-- Header -->
+    <div class="container py-3 bg-white/90 backdrop-blur-[10px] justify-between items-center">
+        <div class="w-[1080px] flex justify-center items-center gap-44">
+            <div class="size- flex justify-start items-center gap-12">
+                <div class="size- flex justify-start items-center gap-2">
+                    <div data-svg-wrapper>
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M29.6521 15.9163C30.7947 15.8763 31.3211 17.3217 30.4202 18.0258L26.0761 21.4209C25.6732 21.7357 25.5189 22.2742 25.6939 22.7546L27.5803 27.9353C27.9715 29.0096 26.7595 29.9569 25.8115 29.3177L21.2402 26.2353C20.8162 25.9494 20.2565 25.9691 19.8536 26.2839L15.5095 29.679C14.6086 30.383 13.3331 29.523 13.6481 28.4239L15.167 23.1238C15.3079 22.6323 15.1162 22.106 14.6923 21.8201L10.121 18.7377C9.173 18.0985 9.59681 16.6197 10.7394 16.5796L16.2495 16.3864C16.7605 16.3685 17.2018 16.0235 17.3427 15.532L18.8616 10.2319C19.1766 9.13284 20.714 9.07892 21.1052 10.1532L22.9917 15.3339C23.1666 15.8143 23.631 16.1275 24.142 16.1096L29.6521 15.9163Z"
+                                fill="#169F9F" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M35.0272 6.55614C42.5681 14.4889 42.447 27.034 34.6629 34.818L34.2888 35.1823C26.3561 42.7232 13.811 42.6019 6.02692 34.818L5.6618 34.4431C-1.75862 26.6362 -1.75837 14.3627 5.66261 6.55614L6.02692 6.18205C13.9343 -1.72536 26.7553 -1.72511 34.6629 6.18205L35.0272 6.55614ZM32.1592 8.68575C25.6344 2.16133 15.0553 2.16109 8.53061 8.68575C2.00613 15.2104 2.00625 25.7896 8.53061 32.3143C15.0553 38.8389 25.6345 38.8389 32.1592 32.3143C38.6839 25.7896 38.6839 15.2105 32.1592 8.68575Z"
+                                fill="#169F9F" />
+                        </svg>
+                    </div>
+                    <div class="justify-start"><span
+                            class="text-black text-2xl font-medium font-['Jost']">Citizen</span><span
+                            class="text-black text-2xl font-light font-['Jost']">Central</span></div>
+                </div>
+                <div class="size- flex justify-start items-center gap-9">
+                    <div class="justify-start text-black text-base font-medium font-['Jost']">Home</div>
+                    <div class="justify-start text-black text-base font-medium font-['Jost']">Services</div>
+                    <div class="justify-start text-black text-base font-medium font-['Jost']">Updates</div>
+                    <div class="justify-start text-black text-base font-medium font-['Jost']">Support</div>
+                </div>
+            </div>
+            <div class="size- flex justify-start items-center gap-6">
+                <div class="size- flex justify-start items-center gap-5">
+                    <div class="size- flex justify-start items-center gap-1.5">
+                        <div data-svg-wrapper class="relative">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_21_1313)">
+                                    <path
+                                        d="M18.7183 10.5C18.7183 8.34512 17.8622 6.27849 16.3385 4.75476C14.8148 3.23102 12.7481 2.375 10.5933 2.375C8.43838 2.375 6.37175 3.23102 4.84802 4.75476C3.32429 6.27849 2.46826 8.34512 2.46826 10.5C2.46826 12.6549 3.32429 14.7215 4.84802 16.2452C6.37175 17.769 8.43838 18.625 10.5933 18.625C12.7481 18.625 14.8148 17.769 16.3385 16.2452C17.8622 14.7215 18.7183 12.6549 18.7183 10.5ZM0.593262 10.5C0.593262 7.84784 1.64683 5.3043 3.52219 3.42893C5.39756 1.55357 7.9411 0.5 10.5933 0.5C13.2454 0.5 15.789 1.55357 17.6643 3.42893C19.5397 5.3043 20.5933 7.84784 20.5933 10.5C20.5933 13.1522 19.5397 15.6957 17.6643 17.5711C15.789 19.4464 13.2454 20.5 10.5933 20.5C7.9411 20.5 5.39756 19.4464 3.52219 17.5711C1.64683 15.6957 0.593262 13.1522 0.593262 10.5ZM6.90186 7.13672L7.3667 7.33594C8.38623 7.77344 9.48389 8 10.5972 8C11.7104 8 12.8042 7.77344 13.8276 7.33594L14.2925 7.13672C14.769 6.93359 15.3198 7.15234 15.5229 7.62891C15.7261 8.10547 15.5073 8.65625 15.0308 8.85938L14.5659 9.05859C13.8901 9.34766 13.1909 9.5625 12.4722 9.69531V11.6523C12.4722 11.8203 12.4995 11.9883 12.5542 12.1445L13.6753 15.5078C13.8394 16 13.5737 16.5312 13.0815 16.6953C12.5894 16.8594 12.0581 16.5938 11.894 16.1016L10.9409 13.2422C10.8901 13.0938 10.7534 12.9922 10.5972 12.9922C10.4409 12.9922 10.3003 13.0938 10.2534 13.2422L9.30029 16.1016C9.13623 16.5938 8.60498 16.8594 8.11279 16.6953C7.62061 16.5312 7.35498 16 7.51904 15.5078L8.64014 12.1445C8.69482 11.9844 8.72217 11.8203 8.72217 11.6523V9.69531C8.00342 9.55859 7.3042 9.34766 6.62842 9.05859L6.16357 8.85938C5.68701 8.65625 5.46826 8.10547 5.67139 7.62891C5.87451 7.15234 6.42529 6.93359 6.90186 7.13672ZM10.5933 3.625C11.0077 3.625 11.4051 3.78962 11.6981 4.08265C11.9911 4.37567 12.1558 4.7731 12.1558 5.1875C12.1558 5.6019 11.9911 5.99933 11.6981 6.29235C11.4051 6.58538 11.0077 6.75 10.5933 6.75C10.1789 6.75 9.78143 6.58538 9.48841 6.29235C9.19538 5.99933 9.03076 5.6019 9.03076 5.1875C9.03076 4.7731 9.19538 4.37567 9.48841 4.08265C9.78143 3.78962 10.1789 3.625 10.5933 3.625Z"
+                                        fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_21_1313">
+                                        <rect width="20" height="20" fill="white" transform="translate(0.593262 0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="justify-start text-black text-base font-medium font-['Jost']">Associability</div>
+                    </div>
+                </div>
+                <div class="size- flex justify-start items-center gap-5">
+                    <div class="size- flex justify-start items-center gap-1.5">
+                        <div data-svg-wrapper class="relative">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_21_1318)">
+                                    <path
+                                        d="M10.5933 18.625C10.8823 18.625 11.6479 18.3438 12.4526 16.7344C12.7964 16.043 13.0933 15.2031 13.312 14.25H7.87451C8.09326 15.2031 8.39014 16.043 8.73389 16.7344C9.53857 18.3438 10.3042 18.625 10.5933 18.625ZM7.56592 12.375H13.6206C13.6831 11.7773 13.7183 11.1484 13.7183 10.5C13.7183 9.85156 13.6831 9.22266 13.6206 8.625H7.56592C7.50342 9.22266 7.46826 9.85156 7.46826 10.5C7.46826 11.1484 7.50342 11.7773 7.56592 12.375ZM7.87451 6.75H13.312C13.0933 5.79688 12.7964 4.95703 12.4526 4.26562C11.6479 2.65625 10.8823 2.375 10.5933 2.375C10.3042 2.375 9.53857 2.65625 8.73389 4.26562C8.39014 4.95703 8.09326 5.79688 7.87451 6.75ZM15.5034 8.625C15.562 9.23047 15.5894 9.85938 15.5894 10.5C15.5894 11.1406 15.5581 11.7695 15.5034 12.375H18.4995C18.6401 11.7734 18.7183 11.1445 18.7183 10.5C18.7183 9.85547 18.644 9.22656 18.4995 8.625H15.5034ZM17.8003 6.75C16.9644 5.14453 15.6089 3.85547 13.9565 3.10156C14.5073 4.10156 14.9448 5.34766 15.23 6.75H17.8042H17.8003ZM5.95264 6.75C6.23779 5.34766 6.67529 4.10547 7.22607 3.10156C5.57373 3.85547 4.21826 5.14453 3.38232 6.75H5.95654H5.95264ZM2.68701 8.625C2.54639 9.22656 2.46826 9.85547 2.46826 10.5C2.46826 11.1445 2.54248 11.7734 2.68701 12.375H5.68311C5.62451 11.7695 5.59717 11.1406 5.59717 10.5C5.59717 9.85938 5.62842 9.23047 5.68311 8.625H2.68701ZM13.9565 17.8984C15.6089 17.1445 16.9644 15.8555 17.8003 14.25H15.2261C14.9409 15.6523 14.5034 16.8945 13.9526 17.8984H13.9565ZM7.22998 17.8984C6.6792 16.8984 6.2417 15.6523 5.95654 14.25H3.38232C4.21826 15.8555 5.57373 17.1445 7.22607 17.8984H7.22998ZM10.5933 20.5C7.9411 20.5 5.39756 19.4464 3.52219 17.5711C1.64683 15.6957 0.593262 13.1522 0.593262 10.5C0.593262 7.84784 1.64683 5.3043 3.52219 3.42893C5.39756 1.55357 7.9411 0.5 10.5933 0.5C13.2454 0.5 15.789 1.55357 17.6643 3.42893C19.5397 5.3043 20.5933 7.84784 20.5933 10.5C20.5933 13.1522 19.5397 15.6957 17.6643 17.5711C15.789 19.4464 13.2454 20.5 10.5933 20.5Z"
+                                        fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_21_1318">
+                                        <rect width="20" height="20" fill="white" transform="translate(0.593262 0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="justify-start text-black text-base font-medium font-['Jost']">English</div>
+                    </div>
+                </div>
+                <div class="size- pl-2.5 pr-3 py-2.5 bg-teal-500 rounded-[34px] flex justify-center items-center gap-2">
+                    <div data-svg-wrapper>
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.86266 10.8208C1.86266 5.83374 5.84143 1.7901 10.7485 1.7901C13.5372 1.7901 16.0244 3.09632 17.6548 5.13628C17.8769 5.41446 18.2736 5.45477 18.5473 5.23304C18.821 5.0113 18.8607 4.60412 18.6425 4.32594C16.7821 1.99167 13.9339 0.5 10.7485 0.5C5.1393 0.5 0.593262 5.12016 0.593262 10.8208V12.7559C0.593262 13.1107 0.878876 13.401 1.22796 13.401C1.57705 13.401 1.86266 13.1107 1.86266 12.7559V10.8208ZM20.5387 8.06722C20.4435 7.72454 20.0944 7.52296 19.7572 7.61568C19.42 7.70841 19.2217 8.06722 19.3129 8.4099C19.5192 9.17589 19.6342 9.9822 19.6342 10.8167V12.7519C19.6342 13.1067 19.9199 13.3969 20.2689 13.3969C20.618 13.3969 20.9036 13.1067 20.9036 12.7519V10.8167C20.9036 9.86529 20.7767 8.94206 20.5387 8.06319V8.06722ZM10.7485 3.72524C9.84401 3.72524 8.97923 3.8986 8.18585 4.21709C7.80107 4.37029 7.70983 4.86617 7.97958 5.18869C8.16999 5.41446 8.48734 5.47896 8.76105 5.37414C9.37988 5.14031 10.0503 5.0113 10.7485 5.0113C13.9021 5.0113 16.4607 7.61165 16.4607 10.8167V11.8206C16.4607 12.9615 16.3893 14.1024 16.2426 15.2313C16.191 15.6223 16.4885 15.9771 16.8773 15.9771C17.1907 15.9771 17.4564 15.7433 17.4961 15.4288C17.6508 14.2355 17.7262 13.0301 17.7262 11.8206V10.8167C17.7262 6.89807 14.6003 3.72121 10.7445 3.72121L10.7485 3.72524ZM6.34919 6.22883C6.11118 5.94662 5.68276 5.92243 5.44475 6.20867C4.39749 7.44636 3.76676 9.05898 3.76676 10.8208V11.8246C3.76676 12.9454 3.63189 14.0581 3.36214 15.1426C3.259 15.5619 3.56048 15.9811 3.98494 15.9811C4.26262 15.9811 4.50856 15.7957 4.57997 15.5216C4.88542 14.3161 5.04013 13.0744 5.04013 11.8246V10.8208C5.04013 9.42182 5.52805 8.13979 6.33729 7.13593C6.5515 6.87388 6.56737 6.48685 6.34919 6.22883ZM10.7485 6.95048C8.64601 6.95048 6.94026 8.68404 6.94026 10.8208V11.8246C6.94026 13.3808 6.72605 14.9289 6.30952 16.4206C6.19052 16.8399 6.49597 17.2712 6.92439 17.2712C7.1981 17.2712 7.44008 17.0898 7.51545 16.8237C7.97561 15.2031 8.20966 13.5179 8.20966 11.8246V10.8208C8.20966 9.39763 9.34815 8.24057 10.7485 8.24057C12.1488 8.24057 13.2873 9.39763 13.2873 10.8208V11.8246C13.2873 13.3889 13.1325 14.9491 12.8231 16.477C12.7398 16.8842 13.0413 17.2712 13.4499 17.2712C13.7434 17.2712 14.0013 17.0656 14.0608 16.7713C14.39 15.1466 14.5567 13.4897 14.5567 11.8246V10.8208C14.5567 8.68404 12.8509 6.95048 10.7485 6.95048ZM11.3832 10.8208C11.3832 10.466 11.0975 10.1757 10.7485 10.1757C10.3994 10.1757 10.1138 10.466 10.1138 10.8208V11.8246C10.1138 14.2798 9.66946 16.7109 8.80072 19.0048L8.56667 19.6216C8.43973 19.9522 8.60238 20.3272 8.93163 20.4562C9.26088 20.5852 9.62583 20.4199 9.75277 20.0853L9.98681 19.4684C10.9111 17.0294 11.3832 14.4371 11.3832 11.8246V10.8208Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div class="justify-start text-white text-base font-medium font-['Jost']">Sign in</div>
+                </div>
+            </div>
         </div>
-        <p class="mb-3">Note: Install Tailwind Intellisense and live server extension in VS code</p>
-        <h4>Need any support contact me on linkedin <a class="font-medium text-blue-500 hover:underline hover:underline-offset-2" target="_blank" href="https://www.linkedin.com/in/abdurrehman712/">Abdur Rehman Majeed</a></h4>
+    </div>
+    <!-- Our Services -->
+    <div>
+        <div class="container w-[1080px] flex-col justify-start items-start gap-6">
+            <div class="self-stretch justify-start text-black text-4xl font-medium font-['Jost']">Our Services</div>
+            <div class="self-stretch h-[669.17px] relative">
+                <div
+                    class="self-stretch h-52 p-5 left-0 top-0 absolute bg-gray-100 rounded-tl-[20px] rounded-tr-[100px] rounded-bl-[20px] rounded-br-[20px] inline-flex flex-col justify-start items-start gap-5">
+                    <div
+                        class="self-stretch justify-start text-black text-4xl font-medium font-['Jost'] leading-[50px]">
+                        🚜</div>
+                    <div class="self-stretch flex flex-col justify-start items-start gap-1.5">
+                        <div class="w-32 justify-start text-black text-xl font-medium font-['Jost'] leading-normal">
+                            Agriculture & Livestock</div>
+                        <div
+                            class="self-stretch justify-start text-black text-sm font-normal font-['Jost'] leading-none">
+                            Farms, Livestock and Animals</div>
+                    </div>
+                </div>
+                <div
+                    class="self-stretch h-52 p-5 left-[275.75px] top-0 absolute bg-gray-100 rounded-tl-[20px] rounded-tr-[100px] rounded-bl-[20px] rounded-br-[20px] inline-flex flex-col justify-start items-start gap-5">
+                    <div
+                        class="self-stretch justify-start text-black text-4xl font-medium font-['Jost'] leading-[50px]">
+                        🪪</div>
+                    <div class="self-stretch flex flex-col justify-start items-start gap-1.5">
+                        <div class="w-32 justify-start text-black text-xl font-medium font-['Jost'] leading-normal">
+                            Identity & Citizenship</div>
+                        <div
+                            class="self-stretch justify-start text-black text-sm font-normal font-['Jost'] leading-none">
+                            Residency, Identity and Work</div>
+                    </div>
+                </div>
+                <div
+                    class="self-stretch h-52 p-5 left-[551.50px] top-0 absolute bg-gray-100 rounded-tl-[20px] rounded-tr-[100px] rounded-bl-[20px] rounded-br-[20px] inline-flex flex-col justify-start items-start gap-5">
+                    <div
+                        class="self-stretch justify-start text-black text-4xl font-medium font-['Jost'] leading-[50px]">
+                        🏡</div>
+                    <div class="self-stretch flex flex-col justify-start items-start gap-1.5">
+                        <div class="w-32 justify-start text-black text-xl font-medium font-['Jost'] leading-normal">
+                            Housing & Properties</div>
+                        <div
+                            class="self-stretch justify-start text-black text-sm font-normal font-['Jost'] leading-none">
+                            Houses, Lands and Real Estate</div>
+                    </div>
+                </div>
+                <div
+                    class="self-stretch h-52 p-5 left-[827.25px] top-0 absolute bg-gray-100 rounded-tl-[20px] rounded-tr-[100px] rounded-bl-[20px] rounded-br-[20px] inline-flex flex-col justify-start items-start gap-5">
+                    <div
+                        class="self-stretch justify-start text-black text-4xl font-medium font-['Jost'] leading-[50px]">
+                        🚨</div>
+                    <div class="self-stretch flex flex-col justify-start items-start gap-1.5">
+                        <div
+                            class="self-stretch justify-start text-black text-xl font-medium font-['Jost'] leading-normal">
+                            Law & Order</div>
+                        <div
+                            class="self-stretch justify-start text-black text-sm font-normal font-['Jost'] leading-none">
+                            Firearm Licensing and Portal and </div>
+                    </div>
+                </div>
+                <div
+                    class="self-stretch h-52 p-5 left-0 top-[229.06px] absolute bg-gray-100 rounded-tl-[20px] rounded-tr-[100px] rounded-bl-[20px] rounded-br-[20px] inline-flex flex-col justify-start items-start gap-5">
+                    <div
+                        class="self-stretch justify-start text-black text-4xl font-medium font-['Jost'] leading-[50px]">
+                        🚍</div>
+                    <div class="self-stretch flex flex-col justify-start items-start gap-1.5">
+                        <div class="w-32 justify-start text-black text-xl font-medium font-['Jost'] leading-normal">
+                            Drive & Transport</div>
+                        <div
+                            class="self-stretch justify-start text-black text-sm font-normal font-['Jost'] leading-none">
+                            Farms, Livestock and Animals</div>
+                    </div>
+                </div>
+                <div
+                    class="self-stretch h-52 p-5 left-[275.75px] top-[229.06px] absolute bg-gray-100 rounded-tl-[20px] rounded-tr-[100px] rounded-bl-[20px] rounded-br-[20px] inline-flex flex-col justify-start items-start gap-5">
+                    <div
+                        class="self-stretch justify-center text-black text-4xl font-medium font-['Jost'] leading-[50px]">
+                        💼</div>
+                    <div class="self-stretch flex flex-col justify-start items-start gap-1.5">
+                        <div class="w-32 justify-start text-black text-xl font-medium font-['Jost'] leading-normal">Work
+                            & Education</div>
+                        <div
+                            class="self-stretch justify-start text-black text-sm font-normal font-['Jost'] leading-none">
+                            Residency, Identity and Work</div>
+                    </div>
+                </div>
+                <div
+                    class="self-stretch h-52 p-5 left-[551.50px] top-[229.06px] absolute bg-gray-100 rounded-tl-[20px] rounded-tr-[100px] rounded-bl-[20px] rounded-br-[20px] inline-flex flex-col justify-start items-start gap-5">
+                    <div
+                        class="self-stretch justify-start text-black text-4xl font-medium font-['Jost'] leading-[50px]">
+                        🩺</div>
+                    <div class="self-stretch flex flex-col justify-start items-start gap-1.5">
+                        <div class="w-32 justify-start text-black text-xl font-medium font-['Jost'] leading-normal">
+                            Healthcare Services</div>
+                        <div
+                            class="self-stretch justify-start text-black text-sm font-normal font-['Jost'] leading-none">
+                            Houses, Lands and Real Estate</div>
+                    </div>
+                </div>
+                <div
+                    class="self-stretch h-52 p-5 left-[827.25px] top-[229.06px] absolute bg-gray-100 rounded-tl-[20px] rounded-tr-[100px] rounded-bl-[20px] rounded-br-[20px] inline-flex flex-col justify-start items-start gap-5">
+                    <div
+                        class="self-stretch justify-start text-black text-4xl font-medium font-['Jost'] leading-[50px]">
+                        ⛲</div>
+                    <div class="self-stretch flex flex-col justify-start items-start gap-1.5">
+                        <div
+                            class="self-stretch justify-start text-black text-xl font-medium font-['Jost'] leading-normal">
+                            Culture & Leisure</div>
+                        <div
+                            class="self-stretch justify-start text-black text-sm font-normal font-['Jost'] leading-none">
+                            Firearm Licensing and Portal and </div>
+                    </div>
+                </div>
+                <div
+                    class="w-60 h-52 p-5 left-0 top-[458.11px] absolute bg-gray-100 rounded-tl-[20px] rounded-tr-[100px] rounded-bl-[20px] rounded-br-[20px] inline-flex flex-col justify-start items-start gap-5">
+                    <div
+                        class="self-stretch justify-start text-black text-4xl font-medium font-['Jost'] leading-[50px]">
+                        🤲🏼</div>
+                    <div class="self-stretch flex flex-col justify-start items-start gap-1.5">
+                        <div class="w-32 justify-start text-black text-xl font-medium font-['Jost'] leading-normal">
+                            Social Care</div>
+                        <div
+                            class="self-stretch justify-start text-black text-sm font-normal font-['Jost'] leading-none">
+                            Farms, Livestock and Animals</div>
+                    </div>
+                </div>
+                <div
+                    class="w-60 h-52 p-5 left-[275.75px] top-[458.11px] absolute bg-gray-100 rounded-tl-[20px] rounded-tr-[100px] rounded-bl-[20px] rounded-br-[20px] inline-flex flex-col justify-start items-start gap-5">
+                    <div
+                        class="self-stretch justify-start text-black text-4xl font-medium font-['Jost'] leading-[50px]">
+                        ✒️</div>
+                    <div class="self-stretch flex flex-col justify-start items-start gap-1.5">
+                        <div class="w-32 justify-start text-black text-xl font-medium font-['Jost'] leading-normal">
+                            Deceased & Inheritance</div>
+                        <div
+                            class="self-stretch justify-start text-black text-sm font-normal font-['Jost'] leading-none">
+                            Residency, Identity and Work</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
