@@ -20,6 +20,12 @@
   --text-2xs--line-height: 0.75rem;
   --text-3xs: 0.5rem;
   --text-3xs--line-height: 0.625rem;
+
+  --color-citizen-teal: #169f9f;
+  --color-custom-gray: #f1f3f5;
+  --color-teal-primary: #009695;
+  --color-teal-secondary: #11bbbb;
+  --color-dark-teal: #273437;
 }
 
 @utility container {
