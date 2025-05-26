@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+
+/* @layer base{
+  @font-face{
+    font-family:"jameel-noori-nastaleeq";
+    src:url("../fonts/jameel-noori-nastaleeq.ttf") format("woff"),
+    url("../fonts/jameel-noori-nastaleeq.ttf") format("opentype"),
+    url("../fonts/jameel-noori-nastaleeq.ttf") format("truetype");
+  }
+} */
+
+@plugin '@tailwindcss/forms';
+
+@theme {
+  --font-*: initial;
+  --font-display: Poppins, sans-serif;
+  --font-body: Roboto, sans-serif;
+
+  --text-2xs: 0.625rem;
+  --text-2xs--line-height: 0.75rem;
+  --text-3xs: 0.5rem;
+  --text-3xs--line-height: 0.625rem;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+  @media (width >= --theme(--breakpoint-sm)) {
+    max-width: none;
+  }
+  @media (width >= 640px) {
+    max-width: 640px;
+  }
+  @media (width >= 768px) {
+    max-width: 768px;
+  }
+  @media (width >= 1024px) {
+    max-width: 1024px;
+  }
+  @media (width >= 1152px) {
+    max-width: 1152px;
+  }
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
