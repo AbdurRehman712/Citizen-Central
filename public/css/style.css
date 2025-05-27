@@ -16,6 +16,7 @@
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-neutral-400: oklch(70.8% 0 0);
     --color-neutral-950: oklch(14.5% 0 0);
+    --color-stone-700: oklch(37.4% 0.01 67.558);
     --color-stone-950: oklch(14.7% 0.004 49.25);
     --color-black: #000;
     --color-white: #fff;
@@ -385,6 +386,14 @@
   .inline-flex {
     display: inline-flex;
   }
+  .size-6 {
+    width: calc(var(--spacing) * 6);
+    height: calc(var(--spacing) * 6);
+  }
+  .size-12 {
+    width: calc(var(--spacing) * 12);
+    height: calc(var(--spacing) * 12);
+  }
   .size-20 {
     width: calc(var(--spacing) * 20);
     height: calc(var(--spacing) * 20);
@@ -414,6 +423,9 @@
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
+  }
+  .h-14 {
+    height: calc(var(--spacing) * 14);
   }
   .h-16 {
     height: calc(var(--spacing) * 16);
@@ -541,29 +553,11 @@
   .max-w-2xl {
     max-width: var(--container-2xl);
   }
-  .max-w-3 {
-    max-width: calc(var(--spacing) * 3);
-  }
   .max-w-4xl {
     max-width: var(--container-4xl);
   }
-  .max-w-5xl {
-    max-width: var(--container-5xl);
-  }
-  .max-w-6xl {
-    max-width: var(--container-6xl);
-  }
   .max-w-7xl {
     max-width: var(--container-7xl);
-  }
-  .max-w-8 {
-    max-width: calc(var(--spacing) * 8);
-  }
-  .max-w-9 {
-    max-width: calc(var(--spacing) * 9);
-  }
-  .max-w-full {
-    max-width: 100%;
   }
   .flex-1 {
     flex: 1;
@@ -614,9 +608,6 @@
   .justify-start {
     justify-content: flex-start;
   }
-  .justify-stretch {
-    justify-content: stretch;
-  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
@@ -650,32 +641,11 @@
   .gap-9 {
     gap: calc(var(--spacing) * 9);
   }
-  .gap-12 {
-    gap: calc(var(--spacing) * 12);
-  }
   .gap-14 {
     gap: calc(var(--spacing) * 14);
   }
-  .gap-24 {
-    gap: calc(var(--spacing) * 24);
-  }
-  .gap-32 {
-    gap: calc(var(--spacing) * 32);
-  }
   .gap-36 {
     gap: calc(var(--spacing) * 36);
-  }
-  .gap-38 {
-    gap: calc(var(--spacing) * 38);
-  }
-  .gap-40 {
-    gap: calc(var(--spacing) * 40);
-  }
-  .gap-48 {
-    gap: calc(var(--spacing) * 48);
-  }
-  .gap-96 {
-    gap: calc(var(--spacing) * 96);
   }
   .gap-\[3px\] {
     gap: 3px;
@@ -857,6 +827,9 @@
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
+  .px-3\.5 {
+    padding-inline: calc(var(--spacing) * 3.5);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -874,6 +847,9 @@
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
+  }
+  .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -893,6 +869,9 @@
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
+  .py-24 {
+    padding-block: calc(var(--spacing) * 24);
+  }
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
   }
@@ -904,6 +883,15 @@
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pb-12 {
+    padding-bottom: calc(var(--spacing) * 12);
+  }
+  .pb-24 {
+    padding-bottom: calc(var(--spacing) * 24);
+  }
+  .pb-48 {
+    padding-bottom: calc(var(--spacing) * 48);
   }
   .pl-12 {
     padding-left: calc(var(--spacing) * 12);
@@ -919,6 +907,9 @@
   }
   .font-\[\'Jost\'\] {
     font-family: 'Jost';
+  }
+  .font-\[\'Lexend\'\] {
+    font-family: 'Lexend';
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -968,6 +959,10 @@
   .leading-9 {
     --tw-leading: calc(var(--spacing) * 9);
     line-height: calc(var(--spacing) * 9);
+  }
+  .leading-\[50px\] {
+    --tw-leading: 50px;
+    line-height: 50px;
   }
   .leading-none {
     --tw-leading: 1;
@@ -1028,6 +1023,9 @@
   .text-gray-600 {
     color: var(--color-gray-600);
   }
+  .text-stone-700 {
+    color: var(--color-stone-700);
+  }
   .text-teal-500 {
     color: var(--color-teal-500);
   }
@@ -1042,6 +1040,10 @@
   }
   .shadow-\[0px_1px_2px_0px_rgba\(0\,0\,0\,0\.10\)\] {
     --tw-shadow: 0px 1px 2px 0px var(--tw-shadow-color, rgba(0,0,0,0.10));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0px_1px_2px_0px_rgba\(0\,0\,0\,0\.15\)\] {
+    --tw-shadow: 0px 1px 2px 0px var(--tw-shadow-color, rgba(0,0,0,0.15));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-lg {
