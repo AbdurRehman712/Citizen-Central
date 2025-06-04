@@ -26,14 +26,14 @@
             <div class="flex h-16 items-center justify-between">
                 <!-- Logo -->
                 <div class="flex items-center gap-2">
-                    <div class="bg-citizen-teal flex h-8 w-8 items-center justify-center rounded-full">
+                    <div class="bg-citizen-teal flex h-10 w-10 sm:h-8 sm:w-8 items-center justify-center rounded-full">
                         <!-- Star Icon (using SVG) -->
-                        <svg class="h-5 w-5 fill-white text-white" viewBox="0 0 24 24" fill="currentColor">
+                        <svg class="h-7 w-7 sm:h-5 sm:w-5 fill-white text-white" viewBox="0 0 24 24" fill="currentColor">
                             <path
                                 d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                         </svg>
                     </div>
-                    <span class="text-xl font-semibold text-black">CitizenCentral</span>
+                    <span class="hidden sm:flex text-xl font-semibold text-black">CitizenCentral</span>
                 </div>
 
                 <!-- Navigation Menu -->
@@ -45,10 +45,10 @@
                 </nav>
 
                 <!-- Right Side Actions -->
-                <div class="flex items-center gap-4">
+                <div class="flex pl-28 sm:items-center gap-4">
                     <!-- Associability -->
                     <a href="#"
-                        class="hover:text-citizen-teal flex items-center gap-2 font-medium text-black transition-colors">
+                        class="hidden hover:text-citizen-teal sm:flex items-center gap-2 font-medium text-black transition-colors">
                         <!-- User Icon -->
                         <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -61,7 +61,7 @@
                     <a href="#"
                         class="hover:text-citizen-teal flex items-center gap-2 font-medium text-black transition-colors">
                         <!-- Globe Icon -->
-                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="h-8 w-8 sm:h-4 sm:w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                         </svg>
@@ -131,97 +131,98 @@
     </section>
     <!-- Our Services -->
     <div class="mx-auto w-full max-w-7xl px-6 py-12">
-        <h1 class="mb-12 text-5xl font-bold text-black">Our Services</h1>
+        <h1 class="mb-12 text-4xl sm:text-5xl font-bold text-black">Our Services</h1>
 
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div class="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3 lg:grid-cols-4">
             <!-- Agriculture & Livestock -->
             <div
-                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-8 transition-shadow duration-300 hover:shadow-lg">
+                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-4 sm:p-8 transition-shadow duration-300 hover:shadow-lg">
                 <div class="mb-6 text-4xl">🚜</div>
-                <h3 class="mb-3 text-xl leading-tight font-bold text-black">Agriculture & Livestock</h3>
-                <p class="text-sm leading-relaxed text-gray-600">Farms, Livestock and Animals</p>
+                <h3 class="mb-3 text-base sm:text-xl leading-tight font-bold text-black">Agriculture & Livestock</h3>
+                <p class="text-xs sm:text-sm leading-relaxed text-gray-600">Farms, Livestock and Animals</p>
             </div>
 
             <!-- Identity & Citizenship -->
             <div
-                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-8 transition-shadow duration-300 hover:shadow-lg">
+                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-4 sm:p-8 transition-shadow duration-300 hover:shadow-lg">
                 <div class="mb-6 text-4xl">🆔</div>
-                <h3 class="mb-3 text-xl leading-tight font-bold text-black">Identity & Citizenship</h3>
-                <p class="text-sm leading-relaxed text-gray-600">Residency, Identity and Work</p>
+                <h3 class="mb-3 ext-base sm:text-xl leading-tight font-bold text-black">Identity & Citizenship</h3>
+                <p class="text-xs sm:text-sm leading-relaxed text-gray-600">Residency, Identity and Work</p>
             </div>
 
             <!-- Housing & Properties -->
             <div
-                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-8 transition-shadow duration-300 hover:shadow-lg">
+                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-4 sm:p-8 transition-shadow duration-300 hover:shadow-lg">
                 <div class="mb-6 text-4xl">🏠</div>
-                <h3 class="mb-3 text-xl leading-tight font-bold text-black">Housing & Properties</h3>
-                <p class="text-sm leading-relaxed text-gray-600">Houses, Lands and Real Estate</p>
+                <h3 class="mb-3 ext-base sm:text-xl leading-tight font-bold text-black">Housing & Properties</h3>
+                <p class="text-xs sm:text-sm leading-relaxed text-gray-600">Houses, Lands and Real Estate</p>
             </div>
 
             <!-- Law & Order -->
             <div
-                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-8 transition-shadow duration-300 hover:shadow-lg">
+                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-4 sm:p-8 transition-shadow duration-300 hover:shadow-lg">
                 <div class="mb-6 text-4xl">🚨</div>
-                <h3 class="mb-3 text-xl leading-tight font-bold text-black">Law & Order</h3>
-                <p class="text-sm leading-relaxed text-gray-600">Firearm Licensing and Portal and</p>
+                <h3 class="mb-3 ext-base sm:text-xl leading-tight font-bold text-black">Law & Order</h3>
+                <p class="text-xs sm:text-sm leading-relaxed text-gray-600">Firearm Licensing and Portal and</p>
             </div>
 
             <!-- Drive & Transport -->
             <div
-                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-8 transition-shadow duration-300 hover:shadow-lg">
+                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-4 sm:p-8 transition-shadow duration-300 hover:shadow-lg">
                 <div class="mb-6 text-4xl">🚌</div>
-                <h3 class="mb-3 text-xl leading-tight font-bold text-black">Drive & Transport</h3>
-                <p class="text-sm leading-relaxed text-gray-600">Farms, Livestock and Animals</p>
+                <h3 class="mb-3 ext-base sm:text-xl leading-tight font-bold text-black">Drive & Transport</h3>
+                <p class="text-xs sm:text-sm leading-relaxed text-gray-600">Farms, Livestock and Animals</p>
             </div>
 
             <!-- Work & Education -->
             <div
-                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-8 transition-shadow duration-300 hover:shadow-lg">
+                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-4 sm:p-8 transition-shadow duration-300 hover:shadow-lg">
                 <div class="mb-6 text-4xl">💼</div>
-                <h3 class="mb-3 text-xl leading-tight font-bold text-black">Work & Education</h3>
-                <p class="text-sm leading-relaxed text-gray-600">Residency, Identity and Work</p>
+                <h3 class="mb-3 ext-base sm:text-xl leading-tight font-bold text-black">Work & Education</h3>
+                <p class="text-xs sm:text-sm leading-relaxed text-gray-600">Residency, Identity and Work</p>
             </div>
 
             <!-- Healthcare Services -->
             <div
-                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-8 transition-shadow duration-300 hover:shadow-lg">
+                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-4 sm:p-8 transition-shadow duration-300 hover:shadow-lg">
                 <div class="mb-6 text-4xl">🩺</div>
-                <h3 class="mb-3 text-xl leading-tight font-bold text-black">Healthcare Services</h3>
-                <p class="text-sm leading-relaxed text-gray-600">Houses, Lands and Real Estate</p>
+                <h3 class="mb-3 ext-base sm:text-xl leading-tight font-bold text-black">Healthcare Services</h3>
+                <p class="text-xs sm:text-sm leading-relaxed text-gray-600">Houses, Lands and Real Estate</p>
             </div>
 
             <!-- Culture & Leisure -->
             <div
-                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-8 transition-shadow duration-300 hover:shadow-lg">
+                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-4 sm:p-8 transition-shadow duration-300 hover:shadow-lg">
                 <div class="mb-6 text-4xl">⛲</div>
-                <h3 class="mb-3 text-xl leading-tight font-bold text-black">Culture & Leisure</h3>
-                <p class="text-sm leading-relaxed text-gray-600">Firearm Licensing and Portal and</p>
+                <h3 class="mb-3 ext-base sm:text-xl leading-tight font-bold text-black">Culture & Leisure</h3>
+                <p class="text-xs sm:text-sm leading-relaxed text-gray-600">Firearm Licensing and Portal and</p>
             </div>
 
             <!-- Social Care -->
             <div
-                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-8 transition-shadow duration-300 hover:shadow-lg">
+                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-4 sm:p-8 transition-shadow duration-300 hover:shadow-lg">
                 <div class="mb-6 text-4xl">🤲</div>
-                <h3 class="mb-3 text-xl leading-tight font-bold text-black">Social Care</h3>
-                <p class="text-sm leading-relaxed text-gray-600">Farms, Livestock and Animals</p>
+                <h3 class="mb-3 ext-base sm:text-xl leading-tight font-bold text-black">Social Care</h3>
+                <p class="text-xs sm:text-sm leading-relaxed text-gray-600">Farms, Livestock and Animals</p>
             </div>
 
             <!-- Deceased & Inheritance -->
             <div
-                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-8 transition-shadow duration-300 hover:shadow-lg">
+                class="bg-custom-gray cursor-pointer rounded-3xl rounded-tr-[100px] p-4 sm:p-8 transition-shadow duration-300 hover:shadow-lg">
                 <div class="mb-6 text-4xl">✒️</div>
-                <h3 class="mb-3 text-xl leading-tight font-bold text-black">Deceased & Inheritance</h3>
-                <p class="text-sm leading-relaxed text-gray-600">Residency, Identity and Work</p>
+                <h3 class="mb-3 ext-base sm:text-xl leading-tight font-bold text-black">Deceased & Inheritance</h3>
+                <p class="text-xs sm:text-sm leading-relaxed text-gray-600">Residency, Identity and Work</p>
             </div>
         </div>
     </div>
     <!-- Discover Your Space -->
-    <div class="relative mx-auto mb-36 flex max-w-7xl flex-col items-start justify-start gap-6 py-12">
-        <p class="max-w-7xl flex-shrink-0 flex-grow-0 self-stretch text-left text-[40px] font-medium text-black">
+    <div class="relative mx-auto mb-36 flex max-w-7xl flex-col items-start justify-start gap-6 px-6 py-12">
+        <p class="mb-12 text-4xl sm:text-5xl font-bold text-black">
+            <!-- max-w-7xl flex-shrink-0 flex-grow-0 self-stretch text-left text-[40px] font-medium text-black -->
             Discover Your Space</p>
-        <div class="flex h-96 flex-shrink-0 flex-grow-0 items-center justify-start gap-6 self-stretch">
+        <div class="flex-wrap flex h-96 flex-shrink-0 flex-grow-0 items-center justify-start gap-6 self-stretch">
             <div class="flex flex-grow flex-col items-start justify-end gap-[21px] self-stretch rounded-[20px] p-7"
-                style="background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(151,151,151,0) 36.51%, rgba(0,0,0,0.55) 75.93%), url('./images/image1.png'); background-size: cover; background-position: center; background-repeat: no-repeat; box-shadow: 0px 1px 1px 0 rgba(0,0,0,0.25);">
+                style="background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(151,151,151,0) 36.51%, rgba(0,0,0,0.55) 75.93%), url('./images/image-1.png'); background-size: cover; background-position: center; background-repeat: no-repeat; box-shadow: 0px 1px 1px 0 rgba(0,0,0,0.25);">
                 <div
                     class="relative flex flex-shrink-0 flex-grow-0 flex-col items-start justify-start gap-1 self-stretch">
                     <p class="w-72 flex-shrink-0 flex-grow-0 self-stretch text-left text-[28px] font-medium text-white">
@@ -233,7 +234,7 @@
                 </div>
             </div>
             <div class="flex flex-grow flex-col items-start justify-end gap-[21px] self-stretch rounded-[20px] p-7"
-                style="background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(151,151,151,0) 36.51%, rgba(0,0,0,0.55) 75.93%), url('./images/image1.png'); background-size: cover; background-position: center; background-repeat: no-repeat; box-shadow: 0px 1px 1px 0 rgba(0,0,0,0.25);">
+                style="background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(151,151,151,0) 36.51%, rgba(0,0,0,0.55) 75.93%), url('./images/image-2.png'); background-size: cover; background-position: center; background-repeat: no-repeat; box-shadow: 0px 1px 1px 0 rgba(0,0,0,0.25);">
                 <div
                     class="relative flex flex-shrink-0 flex-grow-0 flex-col items-start justify-start gap-1 self-stretch">
                     <p class="w-72 flex-shrink-0 flex-grow-0 self-stretch text-left text-[28px] font-medium text-white">
@@ -244,7 +245,7 @@
                 </div>
             </div>
             <div class="flex flex-grow flex-col items-start justify-end gap-[21px] self-stretch rounded-[20px] p-7"
-                style="background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(151,151,151,0) 36.51%, rgba(0,0,0,0.55) 75.93%), url('./images/image1.png'); background-size: cover; background-position: center; background-repeat: no-repeat; box-shadow: 0px 1px 1px 0 rgba(0,0,0,0.25);"">
+                style="background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(151,151,151,0) 36.51%, rgba(0,0,0,0.55) 75.93%), url('./images/image-3.png'); background-size: cover; background-position: center; background-repeat: no-repeat; box-shadow: 0px 1px 1px 0 rgba(0,0,0,0.25);"">
       <div class=" relative flex flex-shrink-0 flex-grow-0 flex-col items-start justify-start gap-1 self-stretch">
                 <p class="w-72 flex-shrink-0 flex-grow-0 self-stretch text-left text-[28px] font-medium text-white">By
                     Entity</p>
@@ -721,13 +722,14 @@
         <div class="mx-auto px-56 py-10 bg-stone-950 flex-col justify-center items-center gap-9">
             <div class="w-[1080px] flex flex-col justify-start items-start gap-9">
                 <div class="self-stretch inline-flex justify-between items-center">
-                    <div class="size- flex justify-start items-center gap-3.5">
-                        <div data-svg-wrapper>
+                    <div class="flex justify-start items-center gap-3.5">
+                        <div class="flex items-center justify-center rounded-full bg-white w-12 h-12">
+                        <!-- <div data-svg-wrapper>
                             <svg width="50" height="49" viewBox="0 0 50 49" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="25" cy="24.5" r="24.5" fill="white" />
                             </svg>
-                        </div>
+                        </div> -->
                         <div data-svg-wrapper class="relative">
                             <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -743,16 +745,18 @@
                                 </defs>
                             </svg>
                         </div>
+                        </div>
                         <div class="justify-start text-white text-base font-medium font-['Jost']">Helpline: 111 000 222
                         </div>
                     </div>
                     <div class="size- flex justify-start items-center gap-3.5">
-                        <div data-svg-wrapper>
+                        <!-- <div data-svg-wrapper>
                             <svg width="50" height="49" viewBox="0 0 50 49" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="25" cy="24.5" r="24.5" fill="white" />
                             </svg>
-                        </div>
+                        </div> -->
+                        <div class="flex items-center justify-center rounded-full bg-white w-12 h-12">
                         <div data-svg-wrapper class="relative">
                             <svg width="28" height="26" viewBox="0 0 28 26" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -769,7 +773,9 @@
                             </svg>
                         </div>
                         <div class="justify-start text-white text-base font-medium font-['Jost']">Contact Us:
-                            info@citizencentral.pk</div>
+                            info@citizencentral.pk
+                        </div>
+                        </div>
                     </div>
                     <div class="size- flex justify-start items-center gap-14">
                         <div class="justify-start text-teal-500 text-base font-medium font-['Jost']">Contact Us</div>
