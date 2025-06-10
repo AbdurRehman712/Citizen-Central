@@ -721,7 +721,7 @@
     <footer>
         <div class="mx-auto px-56 py-10 bg-stone-950 flex-col justify-center items-center gap-9">
             <div class="w-[1080px] flex flex-col justify-start items-start gap-9">
-                <div class="self-stretch inline-flex justify-between items-center">
+                <div class="self-stretch flex-wrap md:flex justify-between items-center">
                     <div class="flex justify-start items-center gap-3.5">
                         <div class="flex items-center justify-center rounded-full bg-white w-12 h-12">
                         <!-- <div data-svg-wrapper>
@@ -749,7 +749,7 @@
                         <div class="justify-start text-white text-base font-medium font-['Jost']">Helpline: 111 000 222
                         </div>
                     </div>
-                    <div class="size- flex justify-start items-center gap-3.5">
+                    <div class="flex justify-start items-center gap-3.5">
                         <!-- <div data-svg-wrapper>
                             <svg width="50" height="49" viewBox="0 0 50 49" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -772,21 +772,23 @@
                                 </defs>
                             </svg>
                         </div>
+                        </div>
                         <div class="justify-start text-white text-base font-medium font-['Jost']">Contact Us:
                             info@citizencentral.pk
                         </div>
-                        </div>
                     </div>
-                    <div class="size- flex justify-start items-center gap-14">
+                    <div class="flex justify-start items-center gap-14">
                         <div class="justify-start text-teal-500 text-base font-medium font-['Jost']">Contact Us</div>
                         <div class="justify-start text-teal-500 text-base font-medium font-['Jost']">Report a bug</div>
                         <div class="justify-start text-teal-500 text-base font-medium font-['Jost']">Suggestions</div>
                     </div>
                 </div>
-                <div class="self-stretch h-0 outline outline-1 outline-offset-[-0.50px] outline-emerald-950"></div>
-                <div class="self-stretch inline-flex justify-between items-start">
-                    <div class="size- flex justify-start items-center">
-                        <div data-svg-wrapper>
+                <div class="self-stretch h-0 outline-1 outline-offset-[-0.50px] outline-emerald-950">
+                </div>
+                <div class="self-stretch md:flex justify-between items-start flex-wrap">
+                    <div class="flex justify-start items-center gap-2">
+                        <div class="flex justify-center items-center">
+                        <div data-svg-wrapper class="absolute">
                             <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -802,9 +804,11 @@
                                     fill="#169F9F" />
                             </svg>
                         </div>
+                        </div>
                         <div class="justify-start"><span
-                                class="text-white text-2xl font-medium font-['Jost']">Citizen</span><span
-                                class="text-white text-2xl font-light font-['Jost']">Central</span></div>
+                             class="text-white text-2xl font-medium font-['Jost']">Citizen</span><span
+                             class="text-white text-2xl font-light font-['Jost']">Central</span>
+                        </div>
                     </div>
                     <div class="w-24 h-48 relative">
                         <div
@@ -864,18 +868,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="self-stretch h-0 outline outline-1 outline-offset-[-0.50px] outline-emerald-950"></div>
-                <div class="self-stretch inline-flex justify-between items-center">
+                <div class="self-stretch h-0 outline-1 outline-offset-[-0.50px] outline-emerald-950">
+                </div>
+                <div class="self-stretch flex-col-reverse md:flex justify-between items-center">
                     <div class="w-96 inline-flex flex-col justify-start items-start gap-3.5">
-                        <div class="size- inline-flex justify-start items-center gap-2.5">
-                            <div data-svg-wrapper>
+                        <div class="inline-flex justify-start items-center gap-2.5">
+                            <!-- <div data-svg-wrapper>
                                 <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.5" y="0.169434" width="55.0054" height="55.0054" rx="7.01815"
                                         fill="black" />
                                 </svg>
-                            </div>
-                            <div data-svg-wrapper>
+                            </div> -->
+                            <div class="flex justify-center items-center">
+                            <div data-svg-wrapper class="absolute">
                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -891,20 +897,21 @@
                                         fill="#169F9F" />
                                 </svg>
                             </div>
+                            </div>
                             <div class="w-72 inline-flex flex-col justify-start items-start">
-                                <div class="self-stretch justify-start"><span
-                                        class="text-white text-base font-normal font-['Jost']">CitizenCentral</span><span
-                                        class="text-white text-base font-medium font-['Jost']"> </span><span
-                                        class="text-white text-base font-extralight font-['Jost']">by Goverment of
-                                        Pakistan</span></div>
+                                <div class="self-stretch justify-start">
+                                    <span class="text-white text-base font-normal font-['Jost']">CitizenCentral</span>
+                                    <span class="text-white text-base font-extralight font-['Jost']">by Goverment of Pakistan</span>
+                                </div>
                                 <div
                                     class="self-stretch justify-start text-teal-500 text-base font-medium font-['Jost']">
-                                    Get it on the app store!</div>
+                                    Get it on the app store!
+                                </div>
                             </div>
                         </div>
                         <div class="self-stretch inline-flex justify-start items-center gap-1.5">
                             <div data-store="App Store" data-style="Black"
-                                class="w-28 h-10 relative bg-neutral-950 rounded-md outline outline-[0.50px] outline-offset-[-0.50px] outline-neutral-400">
+                                class="w-28 h-10 relative bg-neutral-950 rounded-md outline-[0.50px] outline-offset-[-0.50px] outline-neutral-400">
                                 <div data-svg-wrapper class="left-[34.45px] top-[17.77px] absolute">
                                     <svg width="77" height="17" viewBox="0 0 77 17" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -1141,7 +1148,8 @@
                     </div>
                     <img class="size-28" src="./images/nitb-logo 1.svg" />
                 </div>
-                <div class="self-stretch h-0 outline outline-1 outline-offset-[-0.50px] outline-emerald-950"></div>
+                <div class="self-stretch h-0 outline-1 outline-offset-[-0.50px] outline-emerald-950">
+                </div>
                 <div class="self-stretch inline-flex justify-between items-center">
                     <div class="size- flex justify-start items-center gap-9">
                         <div class="justify-start text-white text-xs font-normal font-['Jost']">Terms & Condition</div>
