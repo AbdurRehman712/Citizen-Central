@@ -639,9 +639,6 @@
   .gap-14 {
     gap: calc(var(--spacing) * 14);
   }
-  .gap-36 {
-    gap: calc(var(--spacing) * 36);
-  }
   .gap-\[3px\] {
     gap: 3px;
   }
