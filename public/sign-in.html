@@ -22,12 +22,6 @@
       rel="stylesheet"
     />
 
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
     <title>Quick Start Tailwind VS Code by ARM 2023</title>
   </head>
 
@@ -174,7 +168,8 @@
         </div>
       </div>
     </header>
-    <!-- Find Service -->
+
+    <!-- Sign in -->
     <section class="relative min-h-screen overflow-hidden">
       <!-- Background Image -->
       <div class="absolute inset-0">
@@ -188,10 +183,31 @@
           class="from-teal-primary/80 via-teal-secondary/70 to-dark-teal/90 absolute inset-0 bg-gradient-to-br"
         ></div>
       </div>
-
+      <!-- Back Button -->
+      <button
+        type="button"
+        class="relative mx-auto mt-4 p-4 flex items-center justify-center text-gray-500 transition-colors duration-200 hover:text-gray-900"
+      >
+        <svg
+          class="w-3.5 h-3.5 mr-2"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 14 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 5H1m0 0 4 4M1 5l4-4"
+          ></path>
+        </svg>
+        Back
+      </button>
       <!-- Sign in -->
       <div
-        class="relative w-full mx-auto max-w-sm mt-12 p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700"
+        class="relative w-full mx-auto max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8"
       >
         <form class="space-y-6" action="#">
           <div class="flex flex-col items-start">
@@ -229,7 +245,7 @@
             <h5 class="text-2xl font-medium font-['Jost'] text-gray-900">
               As-Salamu Alaykum
             </h5>
-            <span class="text-sm font-medium text-gray-500">
+            <span class="text-xs font-medium text-gray-500">
               Don’t have an account? Sign up
             </span>
           </div>
@@ -316,6 +332,17 @@
               What is NADRA PAK ID?
             </div>
           </div>
+          <!-- or -->
+          <div class="self-stretch flex justify-center items-center gap-6">
+            <div class="flex-1 h-px bg-gray-200"></div>
+            <div
+              class="text-center justify-start text-gray-500 text-base font-medium font-['Jost'] leading-none"
+            >
+              or
+            </div>
+            <div class="flex-1 h-px bg-gray-200"></div>
+          </div>
+          <!-- Email/Mobile No/CNIC -->
           <div>
             <label
               for="email"

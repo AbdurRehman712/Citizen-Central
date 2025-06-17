@@ -22,12 +22,6 @@
       rel="stylesheet"
     />
 
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
     <title>Quick Start Tailwind VS Code by ARM 2023</title>
   </head>
 
@@ -174,7 +168,8 @@
         </div>
       </div>
     </header>
-    <!-- Find Service -->
+
+    <!-- Create your account -->
     <section class="relative min-h-screen overflow-hidden">
       <!-- Background Image -->
       <div class="absolute inset-0">
@@ -188,53 +183,183 @@
           class="from-teal-primary/80 via-teal-secondary/70 to-dark-teal/90 absolute inset-0 bg-gradient-to-br"
         ></div>
       </div>
-
-      <!-- Content Container -->
-      <div
-        class="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 text-center"
+      <!-- Back Button -->
+      <button
+        type="button"
+        class="relative mx-auto mt-4 p-4 flex items-center justify-center text-gray-500 transition-colors duration-200 hover:text-gray-900"
       >
-        <div class="mx-auto max-w-4xl space-y-8">
-          <!-- Main Heading -->
-          <h1
-            class="text-4xl leading-tight font-bold text-white md:text-6xl lg:text-7xl"
-          >
-            Empowering Pakistani Citizens Across the Globe
-          </h1>
-
-          <!-- Subtitle -->
-          <p
-            class="mx-auto max-w-2xl text-lg font-medium text-white opacity-90 md:text-xl lg:text-2xl"
-          >
-            Making Pakistan Government Services Accessible to Every Citizen
-          </p>
-
-          <!-- Search Input Container -->
-          <div class="relative mx-auto mt-12 max-w-2xl">
-            <div class="relative">
-              <!-- Search Icon -->
-              <svg
-                class="absolute top-1/2 left-4 h-5 w-5 -translate-y-1/2 transform text-gray-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+        <svg
+          class="w-3.5 h-3.5 mr-2"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 14 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 5H1m0 0 4 4M1 5l4-4"
+          ></path>
+        </svg>
+        Back
+      </button>
+      <!-- Create your account. -->
+      <div
+        class="relative w-full mx-auto max-w-lg p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8"
+      >
+        <form class="space-y-6" action="#">
+          <div class="flex flex-col items-start">
+            <!-- Logo -->
+            <div class="flex justify-center items-center mb-6">
+              <div data-svg-wrapper class="absolute">
+                <svg
+                  width="19"
+                  height="19"
+                  viewBox="0 0 19 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.6487 6.37901C18.6168 6.34505 19.0628 7.56979 18.2995 8.16631L14.6188 11.0429C14.2775 11.3096 14.1467 11.7659 14.295 12.1729L15.8933 16.5624C16.2248 17.4726 15.1978 18.2752 14.3946 17.7337L10.5215 15.122C10.1623 14.8798 9.68797 14.8965 9.34662 15.1632L5.66594 18.0398C4.90267 18.6363 3.82198 17.9076 4.08886 16.9764L5.37579 12.4857C5.49514 12.0693 5.33276 11.6233 4.97356 11.3811L1.10041 8.76951C0.297216 8.22792 0.656294 6.97495 1.62442 6.941L6.29295 6.77727C6.72591 6.76208 7.09985 6.46984 7.2192 6.05337L8.50614 1.56275C8.77301 0.631513 10.0756 0.585827 10.4071 1.49608L12.0055 5.88551C12.1537 6.29259 12.5472 6.55792 12.9801 6.54274L17.6487 6.37901Z"
+                    fill="#169F9F"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper class="relative">
+                <svg
+                  width="35"
+                  height="35"
+                  viewBox="0 0 35 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M30.2027 5.44826C36.5919 12.1695 36.4892 22.7987 29.894 29.3939L29.577 29.7026C22.8558 36.0918 12.2266 35.989 5.63139 29.3939L5.32204 29.0763C-0.965113 22.4616 -0.964904 12.0626 5.32273 5.44826L5.63139 5.1313C12.3312 -1.56847 23.1941 -1.56826 29.894 5.1313L30.2027 5.44826ZM27.7727 7.25262C22.2444 1.72463 13.2809 1.72443 7.75272 7.25262C2.22467 12.7808 2.22478 21.7443 7.75272 27.2726C13.281 32.8007 22.2444 32.8007 27.7727 27.2726C33.3009 21.7443 33.3009 12.7809 27.7727 7.25262Z"
+                    fill="#169F9F"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h5 class="text-2xl font-medium font-['Jost'] text-gray-900">
+              Create your account.
+            </h5>
+            <span class="text-xs font-medium text-gray-500">
+              Already have an account? Login here
+            </span>
+          </div>
+          <!-- Full Name -->
+          <div>
+            <label
+              for="email"
+              class="block mb-2 text-sm font-medium text-gray-900"
+              >Full Name</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+              placeholder="Usman Khan"
+              required
+            />
+          </div>
+          <div class="flex gap-4">
+            <!-- CNIC -->
+            <div>
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-gray-900"
+                >CNIC</label
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m21 21-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
-                />
-              </svg>
-
-              <!-- Search Input -->
               <input
-                type="text"
-                placeholder="Find Service"
-                class="focus:ring-teal-secondary w-full rounded-full border-0 bg-white py-4 pr-4 pl-12 text-lg shadow-lg placeholder:text-gray-500 focus:ring-2 focus:outline-none"
+                type="email"
+                name="email"
+                id="email"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                placeholder="123451234561"
+                required
+              />
+            </div>
+            <!-- Email/Phone Number/CNIC -->
+            <div>
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-gray-900"
+                >Email/Phone Number/CNIC</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                placeholder="Your Email"
+                required
               />
             </div>
           </div>
-        </div>
+          <div class="flex gap-4">
+            <!-- Password -->
+            <div>
+              <label
+                for="password"
+                class="block mb-2 text-sm font-medium text-gray-900"
+                >Password</label
+              >
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="••••••••"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                required
+              />
+            </div>
+            <!-- Confirm Password -->
+            <div>
+              <label
+                for="password"
+                class="block mb-2 text-sm font-medium text-gray-900"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="••••••••"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                required
+              />
+            </div>
+          </div>
+          <!-- By signing up -->
+          <div class="flex items-start">
+            <div class="flex items-start">
+              <div class="flex items-center h-5">
+                <input
+                  id="remember"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 border border-gray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-blue-300"
+                  required
+                />
+              </div>
+              <label
+                for="remember"
+                class="ms-2 text-sm font-medium text-gray-500"
+                >By signing up, you are creating a Sendinblue account, and you
+                agree to Flowbite’s Terms of Use and Privacy Policy.</label
+              >
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="w-full text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 text-center"
+          >
+            Create account
+          </button>
+        </form>
       </div>
     </section>
 
