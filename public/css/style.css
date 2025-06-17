@@ -453,6 +453,30 @@
   .ml-120 {
     margin-left: calc(var(--spacing) * 120);
   }
+  .ml-128 {
+    margin-left: calc(var(--spacing) * 128);
+  }
+  .ml-130 {
+    margin-left: calc(var(--spacing) * 130);
+  }
+  .ml-132 {
+    margin-left: calc(var(--spacing) * 132);
+  }
+  .ml-140 {
+    margin-left: calc(var(--spacing) * 140);
+  }
+  .ml-144 {
+    margin-left: calc(var(--spacing) * 144);
+  }
+  .ml-148 {
+    margin-left: calc(var(--spacing) * 148);
+  }
+  .ml-160 {
+    margin-left: calc(var(--spacing) * 160);
+  }
+  .ml-180 {
+    margin-left: calc(var(--spacing) * 180);
+  }
   .block {
     display: block;
   }
